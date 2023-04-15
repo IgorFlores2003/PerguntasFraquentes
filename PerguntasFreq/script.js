@@ -1,7 +1,9 @@
 window.addEventListener("load", ()=>{
     
+    //A constante 'Bot' recebe o elemento do 'button'
     const Bot = document.getElementById("button")
 
+    //Apos clicar no botão 'Buscar' vai ser criado um 'li' que vai receber o 'input.value'
     Bot.onclick = () => {
         const input = document.getElementById("Resposta")
         const lista = document.getElementById("lista")
@@ -21,6 +23,7 @@ window.addEventListener("load", ()=>{
             
             let contador = 0;
             
+            // Seleciona todas as 'li' e devolve um texto informando quantas vezes foi repetido a palavra
             const list = document.querySelectorAll("li"); 
             
             for (let i = 0; i < list.length; i++) {
