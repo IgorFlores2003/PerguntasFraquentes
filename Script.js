@@ -7,10 +7,12 @@ window.addEventListener("load", ()=>{
 
         if(input.value != ""){
             const Lista = document.createElement("li")
-            Lista.classList.add("list-group-item")
+            Lista.classList.add("list-group-item" ,"list-group-item-success")
     
             const texto = document.createTextNode(input.value)
             Lista.append(texto)
             lista.append(Lista)
             input.value = ""
+
+           
         }}})
