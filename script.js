@@ -9,7 +9,7 @@ window.addEventListener("load", ()=>{
         const lista = document.getElementById("lista")
 
 
-        if(input.value != "" ){
+        if(!input.value){
                   
 
             const Lista = document.createElement("li")
