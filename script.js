@@ -1,10 +1,4 @@
-window.addEventListener("load", ()=>{
-    
-    //A constante 'Bot' recebe o elemento do 'button'
-    const Bot = document.getElementById("butt")
-
-    //Apos clicar no botão 'Buscar' vai ser criado um 'li' que vai receber o 'input.value'
-    Bot.onclick = () => {
+Function pergunta(){
         const input = document.getElementById("Resposta")
         const lista = document.getElementById("lista")
 
@@ -46,7 +40,7 @@ window.addEventListener("load", ()=>{
             function limpar(){
               $("li").remove("#Lista");
             }
-
+}
             
 
 
