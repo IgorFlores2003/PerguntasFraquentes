@@ -1,11 +1,14 @@
-Function pergunta(){
+window.addEventListener("load", ()=>{
+    
+  //A constante 'Bot' recebe o elemento do 'button'
+      const Bot = document.getElementById("butt")
         const input = document.getElementById("Resposta")
         const lista = document.getElementById("lista")
 
 
-        if(!input.value){
+        if(input.value != " "){
                   
-
+          Bot.onclick = () => {
             const Lista = document.createElement("li")
             Lista.classList.add("list-group-item" ,"list-group-item-success")
             
@@ -33,14 +36,13 @@ Function pergunta(){
             lista.append(tes)
     
             input.value=""}
-        }  }
-            
-            )
+          
+          }})
 
             function limpar(){
               $("li").remove("#Lista");
             }
-}
+
             
 
 
